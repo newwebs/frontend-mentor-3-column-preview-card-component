@@ -1,0 +1,116 @@
+:root{
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --transparentwhiteParagraphs: hsla(0, 0%, 100%, 0.75);
+    --verylightGrayBackgroundHheadingsButtons: hsl(0, 0%, 95%);
+    --sec: "Big Shoulders Display", sans-serif;
+    --primary:"Lexend Deca", sans-serif;
+}
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html,body{
+    background: var(--verylightGrayBackgroundHheadingsButtons);
+    height: 100%;
+}
+body{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--primary);
+}
+
+/*DESIGN STARTS*/
+.Container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.Card{
+    width: 306px;
+    padding: 45px;
+}
+.Card h1{
+    font-family: var(--sec);
+    font-weight: 700;
+    margin-top: 35px;
+    font-size: 42px;
+    text-transform: uppercase;
+    color: var(--verylightGrayBackgroundHheadingsButtons);
+
+}
+.Card p{
+    color: var(--transparentwhiteParagraphs);
+    line-height: 25px;
+    margin-top: 25px;
+    font-weight: 400;
+    width: 90%;
+}
+.Card button{
+    font-size: 15px;
+    margin-top: 80px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    font-family: var(--primary);
+    background: var(--verylightGrayBackgroundHheadingsButtons);    
+}
+
+.Card:nth-child(1){
+    background: var(--brightOrange);
+    border-radius: 10px 0 0 10px;
+}
+.Card:nth-child(1) button{
+    color: var(--brightOrange);
+}
+.Card:nth-child(2){
+    background: var(--darkCyan);
+
+}
+.Card:nth-child(2) button{
+    color: var(--darkCyan);
+    
+}
+.Card:nth-child(3){
+    background: var(--veryDarkCyan);
+    border-radius: 0 10px 10px 0;
+}
+.Card:nth-child(3) p{
+    width: 100%;
+}
+.Card:nth-child(3) button{
+    color: var(--veryDarkCyan);
+}
+@media screen and (max-width: 430px) {
+    html,body{
+       height: auto;
+    }
+    .Container{
+        flex-direction: column;
+        margin: 85px 0;
+        align-items: center;
+    }
+    .Card:nth-child(1){
+        border-radius: 10px 10px 0 0;
+    }
+    .Card:nth-child(3){
+        border-radius:0 0 10px 10px;
+    }
+    .Card button{
+        margin-top: 25px;
+    }
+    .Card p{
+        width: 100%;
+    }
+    .Card{
+        width: 325px;
+    }
+}
