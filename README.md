@@ -2,7 +2,7 @@
 # Phone
 ![Design preview for the 3-column preview card component coding challenge](./images/Phone.png)
 
-# Desksto
+# Desktop
 ![Design preview for the 3-column preview card component coding challenge](./images/Desktop.png)
 
 ## Welcome! 👋
